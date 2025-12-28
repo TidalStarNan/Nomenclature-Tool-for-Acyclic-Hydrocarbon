@@ -1,0 +1,49 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# debug information files
+*.dwo
+/NT-OC.vcxproj.user
+/.vs/NT-OC/v17
+/.vs/NT-OC/FileContentIndex
+/.vs/NT-OC/CopilotIndices/17.14.1368.60722
+/NT-OC.vcxproj.filters
+/NT-OC/x64/Debug
+*.aps
+/.vs/NT-OC/copilot-chat/c827b39b/sessions
