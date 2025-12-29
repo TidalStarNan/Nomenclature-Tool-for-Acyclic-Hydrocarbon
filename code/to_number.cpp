@@ -3,7 +3,7 @@
 
 void to_chinese_num(short number)
 {
-	const char* chinese_units[] = { "", "一", "二", "三", "四", "五", "六", "七", "八", "九" };
+	const char* chinese_ones[] = { "", "一", "二", "三", "四", "五", "六", "七", "八", "九" };
 	const char* chinese_tens[] = { "", "十", "二十", "三十", "四十", "五十", "六十", "七十", "八十", "九十" };
 
 	if (number <= 0 || number >= 100 )
@@ -15,15 +15,15 @@ void to_chinese_num(short number)
 	{
 		if (number < 10)
 		{
-			std::cout << chinese_units[number];
+			std::cout << chinese_ones[number];
 			return;
 		}
 		else
 		{
 			short tens = number / 10;
-			short units = number % 10;
+			short ones = number % 10;
 
-			std::cout << chinese_tens[tens] << chinese_units[units];
+			std::cout << chinese_tens[tens] << chinese_ones[ones];
 		}
 	}
 }

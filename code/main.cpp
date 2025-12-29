@@ -4,7 +4,8 @@
 
 void render(short pos[100][4], short len, short poi[1][2]);
 void nomenclature(short pos[100][4], short len);
-void out(short pos[100][4], short len);
+void output(short pos[100][4], short len);
+void input(short pos[100][4], short &len);
 static void notice()
 {
 	Sleep(500);
@@ -368,11 +369,12 @@ int main()
 
 			case 'i':
 			case 'I':
+				input(position, chain_length);
 				break;
 
 			case 'o':
 			case 'O':
-				out(position, chain_length);
+				output(position, chain_length);
 				break;
 			}
 		}
