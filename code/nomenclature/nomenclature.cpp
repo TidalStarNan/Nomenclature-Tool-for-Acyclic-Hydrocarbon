@@ -131,7 +131,7 @@ void nomenclature(short position[100][4], short chain_length)
 				}
 			}
 
-			if (has_group = true)
+			if (has_group == true)
 			{
 				if (group_positions[0] < chain_length - group_positions[group_count - 1] + 1)
 				{
