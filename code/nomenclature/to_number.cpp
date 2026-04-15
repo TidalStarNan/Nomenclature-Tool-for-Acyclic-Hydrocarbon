@@ -49,3 +49,17 @@ void to_heavenly_stems_num(short number)
 		}
 	}
 }
+
+void to_halogen_num(short number)
+{
+	const char* halogen_nums[] = { "", "·ú", "ÂÈ", "äå", "µâ" };
+	if (number <= 0 || number > 4)
+	{
+		std::string error = "Â±ËØÊı×ÖÎ»ÖÃ±àºÅ´íÎó\n´íÎóÖµ£º" + std::to_string(number);
+		throw std::out_of_range(error);
+	}
+	else
+	{
+		std::cout << halogen_nums[number];
+	}
+}
